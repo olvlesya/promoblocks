@@ -1,0 +1,76 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  font-size: 14px;
+  line-height: 12px;
+  margin: 15px 0;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+ul li:before {
+  content: "—";
+  padding-right: 5px;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+body {
+  background-color: #e5e5e5;
+  font-family: Roboto;
+}
+
+h1 {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 15px 0 0;
+}
+
+.intensive {
+  display: flex;
+  align-items: center;
+  width: 473px;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-color: #f1f2f6;
+  padding: 0 30px;
+}
+.intensive__logo {
+  width: 35px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+.intensive__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intensive__description p {
+  font-size: 10px;
+  color: #000000;
+  font-weight: 400;
+}
+.intensive__description span {
+  color: #d70a0a;
+  font-weight: 700;
+}
+.intensive__description li {
+  font-size: 10px;
+}
+.intensive__description li:before {
+  color: #d70a0a;
+}
+
+/*# sourceMappingURL=courses.css.map */

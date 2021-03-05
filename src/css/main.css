@@ -1,0 +1,80 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  font-size: 14px;
+  line-height: 12px;
+  margin: 15px 0;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+ul li:before {
+  content: "—";
+  padding-right: 5px;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+body {
+  background-color: #e5e5e5;
+  font-family: Roboto;
+  color: #000000;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.product-sence {
+  display: flex;
+  box-sizing: border-box;
+  width: 730px;
+  background-color: #f1f2f6;
+  padding: 20px;
+}
+.product-sence__info {
+  width: 250px;
+  flex-shrink: 0;
+  margin-right: 25px;
+  box-sizing: border-box;
+}
+.product-sence__logo {
+  width: 46px;
+}
+.product-sence__learn-more {
+  background-color: #1a8fdd;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  text-decoration-line: underline;
+  line-height: 18px;
+}
+.product-sence__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-sence__description li {
+  font-size: 10px;
+}
+.product-sence__description li:before {
+  color: #d70a0a;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "promoblocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass src/scss:src/css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

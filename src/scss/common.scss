@@ -1,0 +1,43 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    font-size: 14px;
+    line-height: 12px;
+    margin: 15px 0;
+    padding-left: 10px;
+    text-indent: -10px;
+
+    &:before {
+      content: "—";
+      padding-right: 5px;
+      font-weight: 700;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@mixin primary-button {
+  background-color: #1a8fdd;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+@mixin download-button($width) {
+  @include primary-button;
+  height: 40px;
+  width: $width;
+  display: block;
+  font-size: 18px;
+  padding: 5px;
+  margin: auto;
+}

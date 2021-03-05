@@ -1,0 +1,57 @@
+@import "./common.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: Roboto;
+}
+
+h1 {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 15px 0 0;
+}
+
+.intensive {
+  display: flex;
+  align-items: center;
+  width: 473px;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-color: #f1f2f6;
+  padding: 0 30px;
+
+  &__logo {
+    width: 35px;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-size: 10px;
+      color: #000000;
+      font-weight: 400;
+    }
+    span {
+      color: #d70a0a;
+      font-weight: 700;
+    }
+
+    li {
+      font-size: 10px;
+
+      &:before {
+        color: #d70a0a;
+      }
+    }
+  }
+}

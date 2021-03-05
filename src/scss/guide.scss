@@ -1,0 +1,59 @@
+@import "./common.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: Roboto;
+  color: #000000;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
+h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.guide {
+  display: flex;
+  width: 1200px;
+  border-radius: 0;
+  background-color: #f1f2f6;
+  box-sizing: border-box;
+  padding: 30px;
+
+  &__image {
+    flex-shrink: 0;
+    margin-right: 49px;
+    box-sizing: border-box;
+    width: 202px;
+  }
+  &__download-manager {
+    @include download-button(100%);
+  }
+  &__download {
+    @include download-button(182px);
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li {
+      margin: 25px 0;
+    }
+  }
+}

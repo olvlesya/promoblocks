@@ -1,0 +1,57 @@
+@import "./common.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: Roboto;
+  color: #000000;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.product-sence {
+  display: flex;
+  box-sizing: border-box;
+  width: 730px;
+  background-color: #f1f2f6;
+  padding: 20px;
+
+  &__info {
+    width: 250px;
+    flex-shrink: 0;
+    margin-right: 25px;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    width: 46px;
+  }
+
+  &__learn-more {
+    @include primary-button;
+    text-decoration-line: underline;
+    line-height: 18px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      font-size: 10px;
+
+      &:before {
+        color: #d70a0a;
+      }
+    }
+  }
+}

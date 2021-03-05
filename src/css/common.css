@@ -1,0 +1,25 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  font-size: 14px;
+  line-height: 12px;
+  margin: 15px 0;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+ul li:before {
+  content: "—";
+  padding-right: 5px;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/*# sourceMappingURL=common.css.map */
